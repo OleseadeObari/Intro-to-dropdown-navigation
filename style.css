@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: rgb(245, 242, 242);
+}
+.container {
+  height: auto;
+  width: 0 auto;
+  width: moz-fit-content;
+  margin: auto;
+}
+/* *********************************************** M O B I L E   V I E W.**********************************************************/
+
+.nav-one {
+  display: none;
+}
+.hamburger {
+  display: block;
+}
+.nav-two {
+  display: none;
+}
+.sections {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.section-two {
+  margin-top: 0.6rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+.image-carrd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-carrd img {
+  width: 100%;
+}
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+.section-one {
+  margin: 0 1.3rem;
+}
+.section-one-writeup {
+  padding-bottom: 1rem;
+}
+.section-one-header {
+  text-align: center;
+}
+.section-one-subhead {
+  padding-top: 1rem;
+  font-size: 18px;
+  text-align: center;
+  color: hsl(0, 0%, 41%);
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-align: center;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.team-kit {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+}
+.team-kit img {
+  height: 20px;
+}
+.attribution {
+  margin-top: 6rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(0, 0%, 8%);
+}
+.nav-bar {
+  padding: 20px;
+}
+.logo-carrd img.hamburger {
+  float: right;
+}
+/* ******************************************************** D E S K T O P   V I E W.**************************************************************/
+@media screen and (min-width: 980px) {
+  /* ***                                             ***                                                                *** */
+
+  /* ************************** LOGO SESSIONNN ***************************** */
+  .logo-carrd {
+    margin-right: 30px;
+  }
+  .logo-carrd img {
+    width: 70px;
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-one {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+  .section-one-header {
+    text-align: initial;
+    font-size: 40px;
+    padding-bottom: 2rem;
+  }
+  .section-one-subhead {
+    text-align: initial;
+    padding-bottom: 2rem;
+    font-size: 20px;
+    max-width: 450px;
+  }
+  .whitespace {
+    white-space: nowrap;
+  }
+  .cta {
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    padding-bottom: 4rem;
+  }
+  .btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  .team-kit img {
+    height: 25px;
+  }
+  .section-two {
+    margin-top: 6rem;
+  }
+  .image-carrd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-carrd img {
+    max-width: 70%;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop img {
+    width: 70%;
+  }
+  .team-kit {
+    padding-top: 1rem;
+  }
+  /* *************************** NAV BAR ****************************** */
+  .hamburger {
+    display: none;
+  }
+  .nav-two {
+    display: block;
+  }
+  .mg-left a {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+  }
+  .nav-one {
+    display: flex;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navs {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .nav-two {
+    margin-right: 40px;
+  }
+
+  .hey {
+    display: none;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .together:hover + .hey {
+    display: block;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 3px 3px 4px 2px hsl(0, 3%, 76%);
+  }
+  .hey a {
+    display: flex;
+    flex-direction: column;
+  }
+  hey a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .center {
+    margin-left: 10px;
+  }
+  .oo {
+    padding-left: 45px;
+  }
+  .flex {
+    display: inline-flex;
+    padding: 0 20px;
+  }
+  .together a,
+  .hey a {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+  }
+  .todo,
+  .remind,
+  .plan,
+  .calendar {
+    display: flex;
+    padding: 10px 14px;
+  }
+
+  .todo img,
+  .remind img,
+  .plan img,
+  .calendar img {
+    padding: 0 10px;
+  }
+
+  .history,
+  .team,
+  .blog {
+    padding: 10px 14px;
+  }
+  .nav-two a {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+  }
+
+  .together a,
+  .flex a,
+  .nav-two a {
+    color: hsl(0, 0%, 41%);
+  }
+  .together a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .flex a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .nav-two a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+
+  .btnn {
+    border: 1px solid hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  .btnn a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btnn:hover {
+    border: 1.8px solid hsl(0, 0%, 8%);
+    box-shadow: 3px 3px 4px 2px hsl(0, 4%, 84%);
+  }
+}
